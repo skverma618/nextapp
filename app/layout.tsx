@@ -3,6 +3,7 @@ import { IBM_Plex_Sans } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import Sidebar from "@/components/shared/Sidebar";
 
 const IBMPlex = IBM_Plex_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -33,7 +34,8 @@ export default function RootLayout({
             <SignInButton />
           </SignedOut>
           <SignedIn>
-            <UserButton />
+            {/* <UserButton /> */}
+            <Sidebar />
           </SignedIn>
           {children}
         </body>

@@ -5,9 +5,9 @@ const Home = () => {
     return (
         <div>
             <p>
-                Home
+                {/* Home */}
             </p>
-            <UserButton />
+            {/* <UserButton /> */}
         </div>
     )
 }
